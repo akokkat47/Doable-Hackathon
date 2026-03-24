@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Emotion palette */
+  --tone-joy:       #f9d849;
+  --tone-excitement:#ff7c43;
+  --tone-sadness:   #74b3ff;
+  --tone-anger:     #ff4d6d;
+  --tone-fear:      #c77dff;
+  --tone-surprise:  #00f5d4;
+  --tone-disgust:   #b5e48c;
+  --tone-neutral:   #9e9eb8;
+  --tone-sarcasm:   #ffb703;
+  --tone-confidence:#43e97b;
+
+  /* UI */
+  --bg:             #080810;
+  --bg2:            #0f0f1a;
+  --bg3:            #161625;
+  --border:         rgba(255,255,255,0.07);
+  --text:           #e8e8f0;
+  --text-muted:     #6b6b88;
+  --accent:         #a78bfa;
+  --accent2:        #60a5fa;
+
+  --radius:         10px;
+  --font-display:   'Syne', sans-serif;
+  --font-mono:      'Space Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  width: 375px;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 4px; }
+
+/* Emotion glow utility */
+.glow-joy       { text-shadow: 0 0 12px var(--tone-joy); }
+.glow-excitement{ text-shadow: 0 0 12px var(--tone-excitement); }
+.glow-sadness   { text-shadow: 0 0 12px var(--tone-sadness); }
+.glow-anger     { text-shadow: 0 0 12px var(--tone-anger); }
+.glow-fear      { text-shadow: 0 0 12px var(--tone-fear); }
+.glow-surprise  { text-shadow: 0 0 12px var(--tone-surprise); }
+.glow-neutral   { text-shadow: none; }
